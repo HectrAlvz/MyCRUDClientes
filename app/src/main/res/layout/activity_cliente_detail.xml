@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".ClienteDetailActivity">
+
+    <EditText
+            android:id="@+id/edNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Cliente"
+            android:layout_marginTop="8dp" android:minHeight="48dp"/>
+
+    <EditText
+            android:id="@+id/edDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:layout_marginTop="8dp" android:minHeight="48dp"/>
+
+    <EditText
+            android:id="@+id/edTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="number"
+            android:layout_marginTop="8dp" android:minHeight="48dp"/>
+
+    <EditText
+            android:id="@+id/edCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:layout_marginTop="8dp" android:minHeight="48dp"/>
+
+    <ImageButton
+            android:id="@+id/btnChooseImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/default_image"
+            android:scaleType="centerInside"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="Seleccionar Imagen"
+            android:onClick="chooseImage" />
+
+    <EditText
+            android:id="@+id/edFotoUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Foto URL"
+            android:layout_marginTop="8dp" android:minHeight="48dp" />
+
+    <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_marginTop="8dp"
+            android:onClick="searchImage" android:backgroundTint="#4F5D73" android:textStyle="bold"
+            app:iconGravity="textStart" app:icon="@android:drawable/ic_menu_search"/>
+
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginTop="8dp"
+            android:onClick="save" android:textStyle="bold" app:icon="@android:drawable/ic_menu_save"
+            app:iconGravity="textStart" android:backgroundTint="#4F5DD7"/>
+
+    <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:layout_marginTop="8dp"
+            android:onClick="delete" android:backgroundTint="#E91E63" app:icon="@android:drawable/ic_menu_delete"
+            android:textStyle="bold" android:layout_gravity="center_horizontal" android:textAlignment="center"
+            app:iconGravity="textStart"/>
+
+</LinearLayout>
